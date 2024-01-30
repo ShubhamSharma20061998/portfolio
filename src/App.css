@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+:root {
+  --primary-light-color: #defcf9;
+  --primary-dark-color: #cadefc;
+  --secondary-light-color: #c3bef0;
+  --secondary-dark-color: #cca8e9;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.firstName {
+  color: var(--secondary-dark-color);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contactButton {
+  border: 3px solid var(--secondary-dark-color) !important;
+  padding: 12px 32px !important;
+  color: var(--secondary-dark-color) !important;
+  border-radius: 0.7rem !important;
+  width: 16rem;
+  height: 3.5rem;
+  transition: all 0.2s linear !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contactButton:hover {
+  background-color: var(--secondary-dark-color) !important;
+  color: #fff !important;
+  transition: all 0.2s linear !important;
 }
-
-.App-link {
-  color: #61dafb;
+.bannerIcons,
+.listIcon,
+.secondaryText {
+  color: var(--secondary-dark-color);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.css-1nppm96-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: var(--secondary-dark-color) !important;
 }

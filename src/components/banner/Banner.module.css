@@ -1,0 +1,82 @@
+.bannerMainContainer {
+  margin-top: 6rem;
+}
+.profileImage {
+  width: 20rem;
+  height: auto;
+  border-radius: 8rem 10rem 4rem 8rem;
+}
+p {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(255, 255, 255, 0.3);
+}
+.container {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height: 5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.animation > div > h2,
+.animation > div > h3 {
+  padding: 0.25rem 0.75rem;
+  height: 5rem;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first h2 {
+  background-color: #20a7d8;
+}
+.second h2 {
+  background-color: #cd921e;
+}
+.third h3 {
+  background-color: #c10528;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+  10% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: -5.62rem;
+  }
+  30% {
+    margin-top: -5.62rem;
+  }
+  40% {
+    margin-top: -11.24rem;
+  }
+  60% {
+    margin-top: -11.24rem;
+  }
+  70% {
+    margin-top: -5.62rem;
+  }
+  80% {
+    margin-top: -5.62rem;
+  }
+  90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
