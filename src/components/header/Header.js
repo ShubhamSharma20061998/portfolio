@@ -23,7 +23,7 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#project" },
-  { name: "Contact Me", href: "#contact" },
+  { name: "Contact Me", href: "#footer" },
 ];
 
 function Banner(props) {
