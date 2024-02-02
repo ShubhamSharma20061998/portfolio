@@ -6,7 +6,7 @@ import ShowCase from "./ShowCase";
 const Projects = () => {
   const heading = { subHeading: "Projects ☕" };
   return (
-    <Container>
+    <Container id="project" sx={{ marginBottom: "8rem" }}>
       <SubHeading {...heading} />
       <ShowCase />
     </Container>

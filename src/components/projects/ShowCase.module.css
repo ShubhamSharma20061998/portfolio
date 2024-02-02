@@ -1,0 +1,33 @@
+.project_image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.project_image:hover {
+  transform: scale(1.03);
+  transition: all 0.2s linear;
+}
+.project_container {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.textContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column !important;
+  justify-content: center;
+  gap: 0.7rem;
+  width: 100%;
+}
+.heading {
+  font-weight: 500;
+}
+.buttonContainer {
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 1rem;
+  margin-top: 0.7rem;
+  width: 100%;
+}

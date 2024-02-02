@@ -1,0 +1,29 @@
+.footerContainer {
+  padding: 2rem;
+  color: #fff;
+}
+.footerImage {
+  width: 100%;
+  height: 15rem;
+}
+.footerIcons {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+.iconContainer {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.innerContainer {
+  align-items: center;
+  justify-content: center;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: column !important;
+  gap: 1rem;
+  text-align: center;
+}

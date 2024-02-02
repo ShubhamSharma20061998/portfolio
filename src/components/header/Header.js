@@ -15,9 +15,16 @@ import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./header_css.css";
 import "../../App.css";
+import { Container, Link } from "@mui/material";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Skills", "Projects", "Contact Me"];
+const navItems = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#project" },
+  { name: "Contact Me", href: "#contact" },
+];
 
 function Banner(props) {
   const { window } = props;
@@ -34,14 +41,12 @@ function Banner(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map(item => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton
-              sx={{
-                textAlign: "center",
-              }}
-            >
-              <ListItemText primary={item} />
+        {navItems.map(({ name, href }, index) => (
+          <ListItem key={index} disablePadding>
+            <ListItemButton>
+              <Link href={href} className="link-tab">
+                <ListItemText primary={name} />
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -53,7 +58,7 @@ function Banner(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex", height: "5rem" }}>
+    <Container sx={{ display: "flex", height: "5rem" }}>
       <CssBaseline />
       <AppBar
         component="nav"
@@ -83,9 +88,11 @@ function Banner(props) {
             <span className="lastName">Sharma</span>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map(item => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                <Typography fontWeight={300}>{item}</Typography>
+            {navItems.map(({ name, href }, index) => (
+              <Button key={index} className="link-buttons">
+                <Link href={href} className="link-tab">
+                  <Typography fontWeight={300}>{name}</Typography>
+                </Link>
               </Button>
             ))}
           </Box>
@@ -98,7 +105,7 @@ function Banner(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true,
+            keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
             display: { xs: "block", sm: "none" },
@@ -111,7 +118,7 @@ function Banner(props) {
           {drawer}
         </Drawer>
       </nav>
-    </Box>
+    </Container>
   );
 }
 

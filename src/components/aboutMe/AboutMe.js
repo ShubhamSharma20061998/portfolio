@@ -1,6 +1,6 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Link } from "@mui/material";
 import React from "react";
-import developerImage from "../../assets/undraw_developer_activity_re_39tg.svg";
+import developerImage from "../../assets/undraw_building_websites_i78t.svg";
 import styles from "./About.module.css";
 import SubHeading from "../subHeading/SubHeading";
 import ParaText from "../paraText/ParaText";
@@ -8,6 +8,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import CustomButtons from "../buttons/CustomButtons";
 import CustomDivider from "../divider/CustomDivider";
 import AboutUsTab from "../work-job-tab/AboutUsTab";
+import resume from "../../assets/Shubham_Resume.pdf";
 
 const AboutMe = () => {
   const subHeading = [{ subHeading: "About Me 📖" }];
@@ -25,7 +26,7 @@ const AboutMe = () => {
   };
 
   return (
-    <Container>
+    <Container id="about">
       <Grid container alignItems={"center"} justifyContent={"space-between"}>
         <Grid item md={4}>
           <img
@@ -41,7 +42,9 @@ const AboutMe = () => {
           {paraText.map((el, index) => (
             <ParaText key={index} {...el} />
           ))}
-          <CustomButtons {...button} />
+          <Link href={resume} target="_blank">
+            <CustomButtons {...button} />
+          </Link>
         </Grid>
       </Grid>
       <Grid

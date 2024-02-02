@@ -1,0 +1,10 @@
+.button {
+  padding: 0.5rem 2rem !important;
+  color: #fff !important;
+  transition: all 0.2s linear !important;
+  border-radius: 0.7rem !important;
+}
+.button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s linear;
+}

@@ -5,8 +5,14 @@ import TabCards from "./tabCards/TabCards";
 const Education = () => {
   const cardsContent = [
     {
+      title: " Bachelor of Technology ",
+      secondaryText: "[ CSE ] 👨‍🎓",
+      subHeading: "F.I.E.M, Kolkata.",
+      date: "📅 [ Aug 2017 - Aug 2021 ]",
+    },
+    {
       title: "Full Stack Developement ",
-      secondaryText: "[MERN] 👩‍💻",
+      secondaryText: "[ MERN ] 👩‍💻",
       subHeading: "DCT Academy, Bangalore.",
       date: "📅 [ May 2023 - Dec 2023 ]",
     },

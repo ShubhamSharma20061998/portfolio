@@ -1,4 +1,4 @@
-import { Container, Grid, IconButton, Typography } from "@mui/material";
+import { Container, Grid, IconButton, Link, Typography } from "@mui/material";
 import React from "react";
 import styles from "./Banner.module.css";
 import SendIcon from "@mui/icons-material/Send";
@@ -21,23 +21,30 @@ const Banner = () => {
   };
 
   return (
-    <Container className={styles.bannerMainContainer}>
+    <Container className={styles.bannerMainContainer} id="home">
       <Grid container alignItems={"center"} justifyContent={"space-between"}>
-        <Grid item md={1}>
-          <IconButton aria-label="LinkedInIcon">
-            <LinkedInIcon
-              sx={{ width: "3rem", height: "auto" }}
-              className="bannerIcons"
-            />
-          </IconButton>
-          <IconButton aria-label="GitHubIcon">
-            <GitHubIcon
-              sx={{ width: "3rem", height: "auto" }}
-              className="bannerIcons"
-            />
-          </IconButton>
+        <Grid item md={1} xs={12}>
+          <Link
+            href="https://www.linkedin.com/in/shubham-sharma-76861a1a0/"
+            target="_blank"
+          >
+            <IconButton aria-label="LinkedInIcon">
+              <LinkedInIcon
+                sx={{ width: "3rem", height: "auto" }}
+                className="bannerIcons"
+              />
+            </IconButton>
+          </Link>
+          <Link href="https://github.com/ShubhamSharma20061998" target="_blank">
+            <IconButton aria-label="GitHubIcon">
+              <GitHubIcon
+                sx={{ width: "3rem", height: "auto" }}
+                className="bannerIcons"
+              />
+            </IconButton>
+          </Link>
         </Grid>
-        <Grid item md={7}>
+        <Grid item md={7} xs={12}>
           <Typography variant="h2" fontWeight={500}>
             Hello 👋, I'm
           </Typography>
@@ -61,9 +68,11 @@ const Banner = () => {
           {paraText.map((el, index) => (
             <ParaText key={index} text={el} />
           ))}
-          <CustomButtons {...button} />
+          <Link href="#footer">
+            <CustomButtons {...button} />
+          </Link>
         </Grid>
-        <Grid item md={4}>
+        <Grid item md={4} xs={12} sx={{ marginTop: { xs: "1rem" } }}>
           <img
             src={profileImage}
             alt="profileImage"

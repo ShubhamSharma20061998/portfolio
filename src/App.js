@@ -4,6 +4,7 @@ import Banner from "./components/banner/Banner";
 import AboutMe from "./components/aboutMe/AboutMe";
 import SkillsTools from "./components/skills-tools/SkillsTools";
 import Projects from "./components/projects/Projects";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <AboutMe />
       <SkillsTools />
       <Projects />
+      <Footer />
     </>
   );
 };

@@ -3,6 +3,7 @@
   --primary-dark-color: #cadefc;
   --secondary-light-color: #c3bef0;
   --secondary-dark-color: #cca8e9;
+  /* --secondary-dark-color: #d71313; */
 }
 .firstName {
   color: var(--secondary-dark-color);
@@ -28,4 +29,15 @@
 }
 .css-1nppm96-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: var(--secondary-dark-color) !important;
+}
+.footerContainer,
+.showcaseButtons {
+  background-color: var(--secondary-dark-color) !important;
+}
+.showcaseButtons {
+  border: 1px solid var(--secondary-dark-color) !important;
+}
+.link-buttons:hover {
+  background-color: var(--secondary-dark-color) !important;
+  color: #ead1ff;
 }

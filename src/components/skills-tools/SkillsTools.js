@@ -87,7 +87,7 @@ const SkillsTools = () => {
     },
   ];
   return (
-    <Container>
+    <Container id="skills">
       {sectionHeading.map((el, index) => (
         <SubHeading key={index} {...el} />
       ))}
